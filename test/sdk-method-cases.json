@@ -1,0 +1,1446 @@
+{
+  "cases": [
+    {
+      "id": "getAllTime:GetAllTime",
+      "operationId": "getAllTime",
+      "methodName": "GetAllTime",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user"
+      },
+      "argumentOrder": [
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": {
+            "is_up_to_date": false,
+            "range": {
+              "end": "end",
+              "end_date": "2024-01-01T00:00:00Z",
+              "start": "start",
+              "start_date": "2024-01-01T00:00:00Z",
+              "timezone": "2024-01-01T00:00:00Z"
+            },
+            "text": "text",
+            "total_seconds": 9.99
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getBadge:GetBadge",
+      "operationId": "getBadge",
+      "methodName": "GetBadge",
+      "namespace": [
+        "badges"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Interval": "today",
+        "Filter": "filter"
+      },
+      "argumentOrder": [
+        "User",
+        "Interval",
+        "Filter"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "color": "color",
+          "label": "label",
+          "message": "example text",
+          "schemaVersion": 1
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getHealth:GetHealth",
+      "operationId": "getHealth",
+      "methodName": "GetHealth",
+      "namespace": [
+        "misc"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "text",
+        "expected": "string",
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getHeartbeats:GetHeartbeats",
+      "operationId": "getHeartbeats",
+      "methodName": "GetHeartbeats",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Date": "2024-01-01T00:00:00Z",
+        "User": "user"
+      },
+      "argumentOrder": [
+        "Date",
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": [
+            {
+              "ai_input_tokens": 1,
+              "ai_line_changes": 1,
+              "ai_output_tokens": 1,
+              "ai_prompt_length": 1,
+              "ai_session": "ai_session",
+              "branch": "branch",
+              "category": "category",
+              "created_at": "2024-01-01T00:00:00Z",
+              "cursorpos": 1,
+              "entity": "entity",
+              "human_line_changes": 1,
+              "id": "id-1",
+              "is_write": false,
+              "language": "language",
+              "line_additions": 1,
+              "line_deletions": 1,
+              "lineno": 1,
+              "lines": 1,
+              "machine_name_id": "machine_name_-1",
+              "project": "project",
+              "time": 1,
+              "type": "type",
+              "user_agent_id": "user_agent_-1",
+              "user_id": "user_-1"
+            }
+          ],
+          "end": "end",
+          "start": "start",
+          "timezone": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getSummary:GetSummary",
+      "operationId": "getSummary",
+      "methodName": "GetSummary",
+      "namespace": [
+        "summary"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Interval": "today",
+        "From": "from",
+        "To": "to",
+        "Recompute": false,
+        "Project": "project",
+        "Language": "language",
+        "Editor": "editor",
+        "OperatingSystem": "operating_system",
+        "Machine": "machine",
+        "Label": "label"
+      },
+      "argumentOrder": [
+        "Interval",
+        "From",
+        "To",
+        "Recompute",
+        "Project",
+        "Language",
+        "Editor",
+        "OperatingSystem",
+        "Machine",
+        "Label"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "branches": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "categories": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "editors": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "entities": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "from": "2024-01-01",
+          "labels": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "languages": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "machines": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "operating_systems": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "projects": [
+            {
+              "key": "key",
+              "total": 100
+            }
+          ],
+          "to": "2024-01-01",
+          "user_id": "user_-1"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeLeaders:GetWakatimeLeaders",
+      "operationId": "getWakatimeLeaders",
+      "methodName": "GetWakatimeLeaders",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "current_user": {
+            "page": 30,
+            "rank": 1,
+            "user": {
+              "created_at": "2024-01-01T00:00:00Z",
+              "display_name": "Example Name",
+              "email": "user@example.com",
+              "full_name": "Example Name",
+              "id": "id-1",
+              "is_email_confirmed": false,
+              "is_email_public": false,
+              "last_heartbeat_at": "2024-01-01T00:00:00Z",
+              "last_plugin_name": "Example Name",
+              "last_project": "last_project",
+              "modified_at": "2024-01-01T00:00:00Z",
+              "photo": "photo",
+              "timezone": "2024-01-01T00:00:00Z",
+              "username": "Example Name",
+              "website": "https://example.com"
+            }
+          },
+          "data": [
+            {
+              "rank": 1,
+              "running_total": {
+                "daily_average": 30,
+                "human_readable_daily_average": "human_readable_daily_average",
+                "human_readable_total": "human_readable_total",
+                "languages": [
+                  {
+                    "name": "Example Name",
+                    "total_seconds": 9.99
+                  }
+                ],
+                "total_seconds": 9.99
+              },
+              "user": {
+                "created_at": "2024-01-01T00:00:00Z",
+                "display_name": "Example Name",
+                "email": "user@example.com",
+                "full_name": "Example Name",
+                "id": "id-1",
+                "is_email_confirmed": false,
+                "is_email_public": false,
+                "last_heartbeat_at": "2024-01-01T00:00:00Z",
+                "last_plugin_name": "Example Name",
+                "last_project": "last_project",
+                "modified_at": "2024-01-01T00:00:00Z",
+                "photo": "photo",
+                "timezone": "2024-01-01T00:00:00Z",
+                "username": "Example Name",
+                "website": "https://example.com"
+              }
+            }
+          ],
+          "language": "language",
+          "page": 30,
+          "range": {
+            "end_date": "2024-01-01T00:00:00Z",
+            "end_text": "end_text",
+            "name": "Example Name",
+            "start_date": "2024-01-01T00:00:00Z",
+            "start_text": "start_text",
+            "text": "text"
+          },
+          "total_pages": 30
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeProject:GetWakatimeProject",
+      "operationId": "getWakatimeProject",
+      "methodName": "GetWakatimeProject",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Id": "id-1"
+      },
+      "argumentOrder": [
+        "User",
+        "Id"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": {
+            "created_at": "2024-01-01T00:00:00Z",
+            "human_readable_last_heartbeat_at": "2024-01-01T00:00:00Z",
+            "id": "id-1",
+            "last_heartbeat_at": "2024-01-01T00:00:00Z",
+            "name": "Example Name",
+            "urlencoded_name": "https://example.com"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeProjects:GetWakatimeProjects",
+      "operationId": "getWakatimeProjects",
+      "methodName": "GetWakatimeProjects",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Q": "q"
+      },
+      "argumentOrder": [
+        "User",
+        "Q"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": [
+            {
+              "created_at": "2024-01-01T00:00:00Z",
+              "human_readable_last_heartbeat_at": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "last_heartbeat_at": "2024-01-01T00:00:00Z",
+              "name": "Example Name",
+              "urlencoded_name": "https://example.com"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimesTats:GetWakatimesTats",
+      "operationId": "getWakatimesTats",
+      "methodName": "GetWakatimesTats",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Range": "today",
+        "Project": "project",
+        "Language": "language",
+        "Editor": "editor",
+        "OperatingSystem": "operating_system",
+        "Machine": "machine",
+        "Label": "label"
+      },
+      "argumentOrder": [
+        "User",
+        "Range",
+        "Project",
+        "Language",
+        "Editor",
+        "OperatingSystem",
+        "Machine",
+        "Label"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": {
+            "branches": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "categories": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "daily_average": 30,
+            "days_including_holidays": 1,
+            "editors": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "end": "end",
+            "human_readable_daily_average": "human_readable_daily_average",
+            "human_readable_range": "human_readable_range",
+            "human_readable_total": "human_readable_total",
+            "is_coding_activity_visible": false,
+            "is_other_usage_visible": false,
+            "languages": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "machines": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "operating_systems": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "projects": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "range": "range",
+            "start": "start",
+            "status": "active",
+            "timezone": "2024-01-01T00:00:00Z",
+            "total_seconds": 9.99,
+            "user_id": "user_-1",
+            "username": "Example Name"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeSummaries:GetWakatimeSummaries",
+      "operationId": "getWakatimeSummaries",
+      "methodName": "GetWakatimeSummaries",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Range": "today",
+        "Start": "start",
+        "End": "end",
+        "Project": "project",
+        "Language": "language",
+        "Editor": "editor",
+        "OperatingSystem": "operating_system",
+        "Machine": "machine",
+        "Label": "label"
+      },
+      "argumentOrder": [
+        "User",
+        "Range",
+        "Start",
+        "End",
+        "Project",
+        "Language",
+        "Editor",
+        "OperatingSystem",
+        "Machine",
+        "Label"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "cumulative_total": {
+            "decimal": "decimal",
+            "digital": "digital",
+            "seconds": 1,
+            "text": "text"
+          },
+          "daily_average": {
+            "days_including_holidays": 1,
+            "days_minus_holidays": 1,
+            "holidays": 1,
+            "seconds": 1,
+            "seconds_including_other_language": 30,
+            "text": "text",
+            "text_including_other_language": "text_including_other_language"
+          },
+          "data": [
+            {
+              "branches": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "categories": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "dependencies": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "editors": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "entities": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "grand_total": {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              },
+              "languages": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "machines": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "operating_systems": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "projects": [
+                {
+                  "digital": "digital",
+                  "hours": 1,
+                  "minutes": 1,
+                  "name": "Example Name",
+                  "percent": 1,
+                  "seconds": 1,
+                  "text": "text",
+                  "total_seconds": 9.99
+                }
+              ],
+              "range": {
+                "date": "2024-01-01T00:00:00Z",
+                "end": "end",
+                "start": "start",
+                "text": "text",
+                "timezone": "2024-01-01T00:00:00Z"
+              }
+            }
+          ],
+          "end": "end",
+          "start": "start"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeUser:GetWakatimeUser",
+      "operationId": "getWakatimeUser",
+      "methodName": "GetWakatimeUser",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user"
+      },
+      "argumentOrder": [
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": {
+            "created_at": "2024-01-01T00:00:00Z",
+            "display_name": "Example Name",
+            "email": "user@example.com",
+            "full_name": "Example Name",
+            "id": "id-1",
+            "is_email_confirmed": false,
+            "is_email_public": false,
+            "last_heartbeat_at": "2024-01-01T00:00:00Z",
+            "last_plugin_name": "Example Name",
+            "last_project": "last_project",
+            "modified_at": "2024-01-01T00:00:00Z",
+            "photo": "photo",
+            "timezone": "2024-01-01T00:00:00Z",
+            "username": "Example Name",
+            "website": "https://example.com"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getWakatimeUseragents:GetWakatimeUseragents",
+      "operationId": "getWakatimeUseragents",
+      "methodName": "GetWakatimeUseragents",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user"
+      },
+      "argumentOrder": [
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "data": [
+            {
+              "editor": "editor",
+              "first_seen": "first_seen",
+              "id": "id-1",
+              "is_browser_extension": false,
+              "is_desktop_app": false,
+              "last_seen": "last_seen",
+              "os": "os",
+              "value": "value",
+              "version": "version"
+            }
+          ],
+          "total_pages": 30
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postDiagnostics:PostDiagnostics",
+      "operationId": "postDiagnostics",
+      "methodName": "PostDiagnostics",
+      "namespace": [
+        "diagnostics"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Architecture": "architecture",
+        "CliVersion": "cli_version",
+        "Id": 1,
+        "Logs": "logs",
+        "Platform": "platform",
+        "Plugin": "plugin",
+        "Stacktrace": "stacktrace"
+      },
+      "argumentOrder": [
+        "Architecture",
+        "CliVersion",
+        "Id",
+        "Logs",
+        "Platform",
+        "Plugin",
+        "Stacktrace"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat:PostHeartbeat",
+      "operationId": "postHeartbeat",
+      "methodName": "PostHeartbeat",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "AiInputTokens": 1,
+        "AiLineChanges": 1,
+        "AiOutputTokens": 1,
+        "AiPromptLength": 1,
+        "AiSession": "ai_session",
+        "Branch": "branch",
+        "Category": "category",
+        "CreatedAt": 1,
+        "Cursorpos": 1,
+        "Editor": "editor",
+        "Entity": "entity",
+        "HumanLineChanges": 1,
+        "IsWrite": false,
+        "Language": "language",
+        "LineAdditions": 1,
+        "LineDeletions": 1,
+        "Lineno": 1,
+        "Lines": 1,
+        "Machine": "machine",
+        "OperatingSystem": "operating_system",
+        "Project": "project",
+        "ProjectRootCount": 1,
+        "Time": 1,
+        "Type": "type",
+        "UserAgent": "user_agent"
+      },
+      "argumentOrder": [
+        "AiInputTokens",
+        "AiLineChanges",
+        "AiOutputTokens",
+        "AiPromptLength",
+        "AiSession",
+        "Branch",
+        "Category",
+        "CreatedAt",
+        "Cursorpos",
+        "Editor",
+        "Entity",
+        "HumanLineChanges",
+        "IsWrite",
+        "Language",
+        "LineAdditions",
+        "LineDeletions",
+        "Lineno",
+        "Lines",
+        "Machine",
+        "OperatingSystem",
+        "Project",
+        "ProjectRootCount",
+        "Time",
+        "Type",
+        "UserAgent"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat2:PostHeartbeat2",
+      "operationId": "postHeartbeat2",
+      "methodName": "PostHeartbeat2",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "AiInputTokens": 1,
+        "AiLineChanges": 1,
+        "AiOutputTokens": 1,
+        "AiPromptLength": 1,
+        "AiSession": "ai_session",
+        "Branch": "branch",
+        "Category": "category",
+        "CreatedAt": 1,
+        "Cursorpos": 1,
+        "Editor": "editor",
+        "Entity": "entity",
+        "HumanLineChanges": 1,
+        "IsWrite": false,
+        "Language": "language",
+        "LineAdditions": 1,
+        "LineDeletions": 1,
+        "Lineno": 1,
+        "Lines": 1,
+        "Machine": "machine",
+        "OperatingSystem": "operating_system",
+        "Project": "project",
+        "ProjectRootCount": 1,
+        "Time": 1,
+        "Type": "type",
+        "UserAgent": "user_agent"
+      },
+      "argumentOrder": [
+        "User",
+        "AiInputTokens",
+        "AiLineChanges",
+        "AiOutputTokens",
+        "AiPromptLength",
+        "AiSession",
+        "Branch",
+        "Category",
+        "CreatedAt",
+        "Cursorpos",
+        "Editor",
+        "Entity",
+        "HumanLineChanges",
+        "IsWrite",
+        "Language",
+        "LineAdditions",
+        "LineDeletions",
+        "Lineno",
+        "Lines",
+        "Machine",
+        "OperatingSystem",
+        "Project",
+        "ProjectRootCount",
+        "Time",
+        "Type",
+        "UserAgent"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat3:PostHeartbeat3",
+      "operationId": "postHeartbeat3",
+      "methodName": "PostHeartbeat3",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "AiInputTokens": 1,
+        "AiLineChanges": 1,
+        "AiOutputTokens": 1,
+        "AiPromptLength": 1,
+        "AiSession": "ai_session",
+        "Branch": "branch",
+        "Category": "category",
+        "CreatedAt": 1,
+        "Cursorpos": 1,
+        "Editor": "editor",
+        "Entity": "entity",
+        "HumanLineChanges": 1,
+        "IsWrite": false,
+        "Language": "language",
+        "LineAdditions": 1,
+        "LineDeletions": 1,
+        "Lineno": 1,
+        "Lines": 1,
+        "Machine": "machine",
+        "OperatingSystem": "operating_system",
+        "Project": "project",
+        "ProjectRootCount": 1,
+        "Time": 1,
+        "Type": "type",
+        "UserAgent": "user_agent"
+      },
+      "argumentOrder": [
+        "User",
+        "AiInputTokens",
+        "AiLineChanges",
+        "AiOutputTokens",
+        "AiPromptLength",
+        "AiSession",
+        "Branch",
+        "Category",
+        "CreatedAt",
+        "Cursorpos",
+        "Editor",
+        "Entity",
+        "HumanLineChanges",
+        "IsWrite",
+        "Language",
+        "LineAdditions",
+        "LineDeletions",
+        "Lineno",
+        "Lines",
+        "Machine",
+        "OperatingSystem",
+        "Project",
+        "ProjectRootCount",
+        "Time",
+        "Type",
+        "UserAgent"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat4:PostHeartbeat4",
+      "operationId": "postHeartbeat4",
+      "methodName": "PostHeartbeat4",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "AiInputTokens": 1,
+        "AiLineChanges": 1,
+        "AiOutputTokens": 1,
+        "AiPromptLength": 1,
+        "AiSession": "ai_session",
+        "Branch": "branch",
+        "Category": "category",
+        "CreatedAt": 1,
+        "Cursorpos": 1,
+        "Editor": "editor",
+        "Entity": "entity",
+        "HumanLineChanges": 1,
+        "IsWrite": false,
+        "Language": "language",
+        "LineAdditions": 1,
+        "LineDeletions": 1,
+        "Lineno": 1,
+        "Lines": 1,
+        "Machine": "machine",
+        "OperatingSystem": "operating_system",
+        "Project": "project",
+        "ProjectRootCount": 1,
+        "Time": 1,
+        "Type": "type",
+        "UserAgent": "user_agent"
+      },
+      "argumentOrder": [
+        "User",
+        "AiInputTokens",
+        "AiLineChanges",
+        "AiOutputTokens",
+        "AiPromptLength",
+        "AiSession",
+        "Branch",
+        "Category",
+        "CreatedAt",
+        "Cursorpos",
+        "Editor",
+        "Entity",
+        "HumanLineChanges",
+        "IsWrite",
+        "Language",
+        "LineAdditions",
+        "LineDeletions",
+        "Lineno",
+        "Lines",
+        "Machine",
+        "OperatingSystem",
+        "Project",
+        "ProjectRootCount",
+        "Time",
+        "Type",
+        "UserAgent"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat5:PostHeartbeat5",
+      "operationId": "postHeartbeat5",
+      "methodName": "PostHeartbeat5",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Body": [
+          {
+            "ai_input_tokens": 1,
+            "ai_line_changes": 1,
+            "ai_output_tokens": 1,
+            "ai_prompt_length": 1,
+            "ai_session": "ai_session",
+            "branch": "branch",
+            "category": "category",
+            "created_at": 1,
+            "cursorpos": 1,
+            "editor": "editor",
+            "entity": "entity",
+            "human_line_changes": 1,
+            "is_write": false,
+            "language": "language",
+            "line_additions": 1,
+            "line_deletions": 1,
+            "lineno": 1,
+            "lines": 1,
+            "machine": "machine",
+            "operating_system": "operating_system",
+            "project": "project",
+            "project_root_count": 1,
+            "time": 1,
+            "type": "type",
+            "user_agent": "user_agent"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "Body"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat6:PostHeartbeat6",
+      "operationId": "postHeartbeat6",
+      "methodName": "PostHeartbeat6",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Body": [
+          {
+            "ai_input_tokens": 1,
+            "ai_line_changes": 1,
+            "ai_output_tokens": 1,
+            "ai_prompt_length": 1,
+            "ai_session": "ai_session",
+            "branch": "branch",
+            "category": "category",
+            "created_at": 1,
+            "cursorpos": 1,
+            "editor": "editor",
+            "entity": "entity",
+            "human_line_changes": 1,
+            "is_write": false,
+            "language": "language",
+            "line_additions": 1,
+            "line_deletions": 1,
+            "lineno": 1,
+            "lines": 1,
+            "machine": "machine",
+            "operating_system": "operating_system",
+            "project": "project",
+            "project_root_count": 1,
+            "time": 1,
+            "type": "type",
+            "user_agent": "user_agent"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "User",
+        "Body"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat7:PostHeartbeat7",
+      "operationId": "postHeartbeat7",
+      "methodName": "PostHeartbeat7",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Body": [
+          {
+            "ai_input_tokens": 1,
+            "ai_line_changes": 1,
+            "ai_output_tokens": 1,
+            "ai_prompt_length": 1,
+            "ai_session": "ai_session",
+            "branch": "branch",
+            "category": "category",
+            "created_at": 1,
+            "cursorpos": 1,
+            "editor": "editor",
+            "entity": "entity",
+            "human_line_changes": 1,
+            "is_write": false,
+            "language": "language",
+            "line_additions": 1,
+            "line_deletions": 1,
+            "lineno": 1,
+            "lines": 1,
+            "machine": "machine",
+            "operating_system": "operating_system",
+            "project": "project",
+            "project_root_count": 1,
+            "time": 1,
+            "type": "type",
+            "user_agent": "user_agent"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "User",
+        "Body"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "postHeartbeat8:PostHeartbeat8",
+      "operationId": "postHeartbeat8",
+      "methodName": "PostHeartbeat8",
+      "namespace": [
+        "heartbeat"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Body": [
+          {
+            "ai_input_tokens": 1,
+            "ai_line_changes": 1,
+            "ai_output_tokens": 1,
+            "ai_prompt_length": 1,
+            "ai_session": "ai_session",
+            "branch": "branch",
+            "category": "category",
+            "created_at": 1,
+            "cursorpos": 1,
+            "editor": "editor",
+            "entity": "entity",
+            "human_line_changes": 1,
+            "is_write": false,
+            "language": "language",
+            "line_additions": 1,
+            "line_deletions": 1,
+            "lineno": 1,
+            "lines": 1,
+            "machine": "machine",
+            "operating_system": "operating_system",
+            "project": "project",
+            "project_root_count": 1,
+            "time": 1,
+            "type": "type",
+            "user_agent": "user_agent"
+          }
+        ]
+      },
+      "argumentOrder": [
+        "User",
+        "Body"
+      ],
+      "response": {
+        "kind": "empty",
+        "expected": null,
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "statusbar:Statusbar",
+      "operationId": "statusbar",
+      "methodName": "Statusbar",
+      "namespace": [
+        "wakatime"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user"
+      },
+      "argumentOrder": [
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "cached_at": "2024-01-01T00:00:00Z",
+          "data": {
+            "branches": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "categories": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "dependencies": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "editors": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "entities": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "grand_total": {
+              "digital": "digital",
+              "hours": 1,
+              "minutes": 1,
+              "text": "text",
+              "total_seconds": 9.99
+            },
+            "languages": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "machines": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "operating_systems": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "projects": [
+              {
+                "digital": "digital",
+                "hours": 1,
+                "minutes": 1,
+                "name": "Example Name",
+                "percent": 1,
+                "seconds": 1,
+                "text": "text",
+                "total_seconds": 9.99
+              }
+            ],
+            "range": {
+              "date": "2024-01-01T00:00:00Z",
+              "end": "end",
+              "start": "start",
+              "text": "text",
+              "timezone": "2024-01-01T00:00:00Z"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    }
+  ]
+}
